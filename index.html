@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Manipulation and Hashing</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>JSON Manipulation and Hashing</h1>
+
+        <h2>a) Convert JSON to JavaScript Object</h2>
+        <textarea id="jsonInput" placeholder="Enter JSON here"></textarea>
+        <button onclick="convertJsonToObject()">Convert to JS Object</button>
+        <p id="jsonOutput"></p>
+
+        <h2>b) Convert JSON to Date</h2>
+        <textarea id="jsonDateInput" placeholder='Enter JSON with a "date" field'></textarea>
+        <button onclick="convertJsonToDate()">Convert to Date</button>
+        <p id="dateOutput"></p>
+
+        <h2>c) Convert JSON to CSV and CSV to JSON</h2>
+        <textarea id="csvJsonInput" placeholder="Enter JSON or CSV here"></textarea>
+        <button onclick="convertJsonToCsv()">JSON to CSV</button>
+        <button onclick="convertCsvToJson()">CSV to JSON</button>
+        <p id="csvOutput"></p>
+        <p id="jsonFromCsvOutput"></p>
+
+        <h2>d) Create Hash from String</h2>
+        <textarea id="hashInput" placeholder="Enter string to hash"></textarea>
+        <button onclick="createHash()">Generate Hash</button>
+        <p id="hashOutput"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
